@@ -1,11 +1,22 @@
 package notas;
-
+/**
+ * 
+ * @author JCarlosOrtega
+ *
+ */
 public class califica {
 
 	public califica() {
 		
 	}
 	
+	/**
+	 * 
+	 * @param num_nota
+	 * @return
+	 * 
+	 * Método califica
+	 */
 	public static String califica(int num_nota) {
 		String calificacion;
 		if (num_nota >= 0 && num_nota < 5)

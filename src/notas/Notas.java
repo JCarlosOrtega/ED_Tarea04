@@ -18,19 +18,19 @@ public class Notas {
 		System.out.print("Introduzca una nota: ");
 		numero = reader.nextInt();
 
-		calificacion = cali(numero);
+		calificacion = califica(numero);
 
 		System.out.println(calificacion);
 		reader.close();
 	}
 
-	public static String cali(int n) {
+	public static String califica(int num_nota) {
 		String calificacion;
-		if (n >= 0 && n < 5)
+		if (num_nota >= 0 && num_nota < 5)
 			calificacion = "Suspenso";
-		else if (n >= 5 && n < 8)
+		else if (num_nota >= 5 && num_nota < 8)
 			calificacion = "Aprobado";
-		else if (n >= 8 && n <= 10)
+		else if (num_nota >= 8 && num_nota <= 10)
 			calificacion = "Sobresaliente";
 		else
 			calificacion = "La nota introducida no es correcta";

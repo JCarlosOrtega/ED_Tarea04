@@ -12,19 +12,19 @@ public class Notas {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Scanner reader = new Scanner(System.in); // Para pedir números por   teclado
-		int n = 0;
+		Scanner reader = new Scanner(System.in); // Para pedir números por teclado
+		int numero = 0;
 		String calificacion = "";
 		System.out.print("Introduzca una nota: ");
-		n = reader.nextInt();
+		numero = reader.nextInt();
 
-		calificacion = calif(n);
+		calificacion = cali(numero);
 
 		System.out.println(calificacion);
 		reader.close();
 	}
 
-	public static String calif(int n) {
+	public static String cali(int n) {
 		String calificacion;
 		if (n >= 0 && n < 5)
 			calificacion = "Suspenso";
